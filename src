@@ -9,3 +9,5 @@ SELECT * FROM emp WHERE ENAME LIKE 'J%$_%' ESCAPE '$';
 
 --OTRO EJEMPLO:
 WHERE c1 LIKE '%10-15@% off%' ESCAPE '@';
+
+--Obtendra aquellos registros que tengan %10-15% off%' tomando en cuenta el % despúes del 15
