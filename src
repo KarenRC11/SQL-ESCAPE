@@ -1,0 +1,11 @@
+--Sentencia de ESCAPE
+
+--Los caracteres de escape se utilizan en la cadena de patrón para indicar que cualquier carácter comodín que aparezca después del carácter de escape en la cadena de patrón debe tratarse como un carácter normal.
+--El carácter de escape predeterminado es la barra invertida (\)
+
+SELECT * FROM emp WHERE ENAME LIKE 'J%$_%' ESCAPE '$';
+
+--Esto hace coincidir todos los registros con nombres que comienzan con la letra 'J' y tienen el carácter '_' en ellos.
+
+--OTRO EJEMPLO:
+WHERE c1 LIKE '%10-15@% off%' ESCAPE '@';
